@@ -4,10 +4,17 @@ $(document).ready(function () {
   var $navLinks = $('#main-nav a');
   var $collapsedNav = $('.navbar-collapse')
 
+  // Use this to decode html entity for changeLetter
+  function decodeHTML(html) {
+    var temp = document.createElement('textarea');
+    temp.innerHTML = html;
+    return temp.value;
+  }
   // Change letter O to Ø
   function changeLetter(elem) {
     var str = elem.text().toLowerCase();
-    str = str.replace(/\o/g, 'Ø');
+    var oSlash = decodeHTML('&Oslash;');
+    str = str.replace(/\o/g, oSlash);
     elem.text(str);
   }
   $('.letter-change').each(function() {
