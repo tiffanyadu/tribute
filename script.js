@@ -2,7 +2,7 @@ $(document).ready(function () {
   var $brand = $('.navbar-brand');
   var $offsetY = $('#background').offset().top - 150;
   var $navLinks = $('#main-nav a');
-  var $collapsedNav = $('.navbar-collapse')
+  var $collapsedNav = $('.navbar-collapse');
 
   // Use this to decode html entity for changeLetter
   function decodeHTML(html) {
