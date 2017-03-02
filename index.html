@@ -9,14 +9,36 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
   </head>
-  <body>
-    <div class="jumbotron">
+  <body data-spy="scroll" data-target="#main-nav" data-offset="52">
+    <nav id="main-nav" class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand scroll" href="#top">Twenty One Pilots</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a class="scroll" href="#background">Background</a><span class="sr-only">(current)</span></li>
+            <li><a class="scroll" href="#biography">Biography</a></li>
+            <li><a class="scroll" href="#gallery">Gallery</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    <div id="top" class="jumbotron">
       <div class="container">
         <img class="logo img-responsive center-block" src="https://pbs.twimg.com/profile_images/577670388764692480/2MADLWJ-.jpeg" alt="Twenty One Pilots Logo">
         <h1 class="title text-center text-uppercase">Twenty Øne PilØts</h1>
       </div>
     </div>
-    <div class="container">
+    <section id="background" class="container">
       <!-- Background Info -->
       <div class="row">
         <div class="col-sm-6">
@@ -56,9 +78,9 @@
           </table>
         </div><!-- /.col -->
       </div><!-- /.row -->
-    </div><!-- /.container -->
+    </section><!-- /.container -->
     <!-- Quote -->
-    <div class="container-fluid bg-red">
+    <section class="container-fluid bg-red">
       <div class="row">
         <div class="col-md-10 col-md-offset-1">
           <blockquote>
@@ -67,9 +89,9 @@
           </blockquote>
         </div>
       </div><!-- /.row -->
-    </div><!-- /.container-fluid -->
+    </section><!-- /.container-fluid -->
     <!-- Biography -->
-    <div class="container">
+    <section id="biography" class="container">
       <div class="row">
         <div class="col-sm-12">
           <img class="img-responsive x-padding-b" src="http://www.youthareawesome.com/wp-content/uploads/2016/04/twenty_one_pilots_-_main_pub_-_jabari_jacobs-e1428291650914.jpg" alt="Josh Dun and Tyler Joseph">
@@ -85,10 +107,10 @@
           <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=7&cad=rja&uact=8&ved=0ahUKEwj8goLRze_RAhVMlFQKHQEEA2oQFgg4MAY&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FTwenty_One_Pilots&usg=AFQjCNGs67PlUb2Df-bUccLjHpeJIjSxzQ&sig2=NWlZDXx-St4ik6FlD9-2pg" target="_blank" class="btn btn-lg btn-danger"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span> &nbsp;Learn more about Twenty One Pilots</a>
         </div>
       </div><!-- /.row -->
-    </div><!-- /.container -->
+    </section><!-- /.container -->
 
     <!-- Img Gallery -->
-    <div class="container-fluid bg-red">
+    <section id="gallery" class="container-fluid bg-red">
       <div class="row">
         <h2 class="text-center"><span class="highlight">Photo Gallery</span></h2>
         <div class="col-md-6">
@@ -126,16 +148,11 @@
           </small>
         </div>  
       </footer>
-    </div><!-- /.container-fluid -->
+    </section><!-- /.container-fluid -->
     
     <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script>
-      $(document).ready(function() {
-        $("span.highlight").each(function() {
-          $(this).text($(this).text().replace(/\o/g,"Ø"));
-        });
-      });
-    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
