@@ -10,11 +10,7 @@ $(document).ready(function () {
     str = str.replace(/\o/g, 'Ø');
     elem.text(str);
   }
-  changeLetter($brand);
-  $navLinks.each(function() {
-    changeLetter($(this));
-  });
-  $('span.highlight').each(function() {
+  $('.letter-change').each(function() {
     changeLetter($(this));
   });
 

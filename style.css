@@ -32,7 +32,7 @@ footer#footer {
   padding: 0;
 }
 .jumbotron .logo { max-height: 450px; }
-.jumbotron .title { 
+.jumbotron h1 { 
   color: #fff;
   font-weight: 100;
   letter-spacing: 1rem;
@@ -75,6 +75,9 @@ section.container-fluid img { padding: 2%; }
 a.btn-danger { 
   background-color: #f04937;
   color: #fff;
+}
+.letter-change {
+  text-transform: uppercase;
 }
 
 /* Add padding back to containers */
