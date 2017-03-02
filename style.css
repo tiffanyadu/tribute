@@ -1,0 +1,63 @@
+/* General Styles */
+html { font-size: 1.3rem; }
+body {
+  font-family: "futura-pt", sans-serif;
+  font-size: 1rem;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 1.3rem;
+  text-transform: uppercase;
+}
+p { line-height: 1.5; }
+blockquote { 
+  border-left-color: #fff;
+  font-size: 1.2rem;
+  margin: 0;
+}
+footer#footer { padding-top: 30px; }
+
+/* Container Styles */
+.jumbotron {
+  background-color: #000;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+.jumbotron .logo { max-height: 450px; }
+.jumbotron .title { 
+  color: #fff;
+  font-weight: 100;
+  letter-spacing: 1rem;
+  line-height: 1.3;
+}
+.container { padding: 6% 0; }
+.container-fluid { padding: 6%; }
+.container-fluid img { padding: 2%; }
+
+/* Other Styles */
+.table { font-size: .8rem; }
+.x-padding-b { padding-bottom: 6%; }
+.bg-red { 
+  background-color: #f04937;
+  background: linear-gradient(rgba(240,73,55,0.8),rgba(240,73,55,1)), url("https://www.transparenttextures.com/patterns/black-twill.png");
+}
+.highlight {
+  background-color: #000;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  color: #fff;
+  display: inline;
+  padding: 0 10px;
+}
+.text-white { color: #fff; }
+a.btn-danger { 
+  background-color: #f04937;
+  color: #fff;
+}
+
+/* Add padding back to containers */
+@media (max-width: 768px) {
+  .container {
+    padding: 6%;
+  }
+}
