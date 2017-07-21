@@ -11,12 +11,12 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
 }
 p { line-height: 1.5; }
-blockquote { 
+blockquote {
   border-left-color: #fff;
   font-size: 1.2rem;
   margin: 0;
 }
-footer#footer { 
+footer#footer {
   font-size: 0.9rem;
   letter-spacing: 1px;
   opacity: 0.7;
@@ -29,10 +29,10 @@ footer#footer {
   background-color: #000;
   color: #fff;
   margin: 0;
-  padding: 0;
+  /*padding: 0;*/
 }
 .jumbotron .logo { max-height: 450px; }
-.jumbotron h1 { 
+.jumbotron h1 {
   color: #fff;
   font-weight: 100;
   letter-spacing: 1rem;
@@ -59,7 +59,7 @@ section.container-fluid img { padding: 2%; }
 /* Other Styles */
 .table { font-size: .8rem; }
 .x-padding-b { padding-bottom: 6%; }
-.bg-red { 
+.bg-red {
   background-color: #f04937;
   background: linear-gradient(rgba(240,73,55,0.8),rgba(240,73,55,1)), url("https://www.transparenttextures.com/patterns/black-twill.png");
 }
@@ -72,7 +72,7 @@ section.container-fluid img { padding: 2%; }
   padding: 0 10px;
 }
 .text-white { color: #fff; }
-a.btn-danger { 
+a.btn-danger {
   background-color: #f04937;
   color: #fff;
 }
